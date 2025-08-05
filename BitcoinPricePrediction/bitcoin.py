@@ -156,5 +156,6 @@ MSE = 0.0
 # YOUR CODE HERE
 MSE = sm.mean_squared_error(compareDF['Actual'], compareDF['Predicted'])
 print "The MSE is %f" % (MSE)
-  
-
+# Compute the RMSE and print the result
+RMSE = math.sqrt(MSE)
+print "The RMSE is %f" % (RMSE)
